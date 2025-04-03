@@ -58,8 +58,8 @@ def start_chat(file_path = "chat_history.json", system_prompt = "", user_name = 
 
 
 def main():
-    file_path = "meido.json"
-    system_prompt = "You are a helpful assistant."
+    file_path = "chat_history.json"
+    system_prompt = "You are a helpful assistant." # 系统设定
     user_name = "You"
     ai_name = "AI"
     start_chat(file_path, system_prompt, user_name, ai_name)    
