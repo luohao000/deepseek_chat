@@ -42,7 +42,7 @@ def start_chat(file_path = "chat_history.json", system_prompt = "", user_name = 
         elif user_input.lower() == "reset":
             messages.clear()
             print("Chat history cleared.")
-            if (system_prompt != "" and messages == []):
+            if (system_prompt != ""):
                 messages.append({"role": "system", "content": system_prompt, "time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")})
             save_conversation_to_json(messages, file_path)
             continue
